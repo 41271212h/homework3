@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrient Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calorie, Protein, and Fat Tracker</h1>
+    
+    <form id="trackerForm">
+      <label for="food">Food Item:</label>
+      <input type="text" id="food" placeholder="e.g., Chicken Breast" required>
+
+      <label for="calories">Calories (kcal):</label>
+      <input type="number" id="calories" placeholder="e.g., 200" required>
+
+      <label for="protein">Protein (g):</label>
+      <input type="number" id="protein" placeholder="e.g., 30" required>
+
+      <label for="fat">Fat (g):</label>
+      <input type="number" id="fat" placeholder="e.g., 5" required>
+
+      <button type="button" onclick="addEntry()">Add Entry</button>
+    </form>
+
+    <div class="summary">
+      <h2>Today's Summary</h2>
+      <ul id="entryList"></ul>
+      <p id="totals"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

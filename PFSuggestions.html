@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Fitness Suggestions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Physical Fitness Suggestions</h1>
+
+    <form id="fitnessForm">
+      <label for="level">Fitness Level:</label>
+      <select id="level" required>
+        <option value="" disabled selected>Select your level</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label for="goal">Primary Fitness Goal:</label>
+      <select id="goal" required>
+        <option value="" disabled selected>Select your goal</option>
+        <option value="strength">Increase Strength</option>
+        <option value="endurance">Improve Endurance</option>
+        <option value="flexibility">Increase Flexibility</option>
+        <option value="general">General Health</option>
+      </select>
+
+      <button type="button" onclick="getSuggestions()">Get Suggestions</button>
+    </form>
+
+    <div id="suggestions"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Your Health & Fitness Tracker</h1>
+    <p>Your one-stop solution to track your BMI, nutrition, and fitness goals!</p>
+  </header>
+
+  <div class="card-container">
+    <!-- BMI Calculator Card -->
+    <div class="card" onclick="navigateTo('bmi.html')">
+      <h2>BMI Calculator</h2>
+      <a href="bmi.html">BMI Calculator</a>
+      <p>Check your BMI and get insights into your health status.</p>
+    </div>
+
+    <!-- Nutrient Tracker Card -->
+    <div class="card" onclick="navigateTo('tracker.html')">
+      <h2>Calorie & Nutrient Tracker</h2>
+      <a href="tracker.html">Calorie Tracker</a>
+      <p>Track your daily calorie, protein, and fat intake.</p>
+    </div>
+
+    <!-- Fitness Suggestions Card -->
+    <div class="card" onclick="navigateTo('fitness.html')">
+      <h2>Fitness Suggestions</h2>
+      <a href="PFSuggestions.html">Fitness Suggestions</a>
+      <p>Get personalized fitness tips based on your profile and goals.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
